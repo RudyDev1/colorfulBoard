@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolort</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58309639ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="buttons">
+        <div class="buttons__group">
+            <h2>Prędkość animacji:</h2>
+            <button class="buttons__btn" data-setting="speed" data-speed="10">Wolno</button>
+            <button class="buttons__btn" data-setting="speed" data-speed="3">Normalnie</button>
+            <button class="buttons__btn" data-setting="speed" data-speed=".5">Szybko</button>
+        </div>
+        <div class="buttons__group">
+            <h2>Zakres kolorów:</h2>
+            <button class="buttons__btn" data-setting="color" data-color-range="0">Czerwony</button>
+            <button class="buttons__btn" data-setting="color" data-color-range="100">Zielony</button>
+            <button class="buttons__btn" data-setting="color" data-color-range="200">Niebieski</button>
+            <button class="buttons__btn" data-setting="color" data-color-range="360">Normalny</button>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <input type="range" value="70" min="0" max="100" id="slider" class="slider__range">
+        <p>Nasycenie kolorów: <span class="slider__info">70</span>%</p>
+    </div>
+
+    <div class="box"></div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
